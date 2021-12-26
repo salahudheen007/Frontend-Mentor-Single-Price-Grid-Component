@@ -1,0 +1,84 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --verylightgrey:hsl(216, 31%, 82%);
+
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color:var(--LightGray) ;
+    
+}
+body>*{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+.container{
+    width: 100%;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.row{
+    margin: 8rem auto;
+    width: 45rem;
+}.div1,.div2,.div3{
+    padding: 1.2rem;
+}
+.div1{
+    background-color: white;
+}
+.div2{
+    background-color: var(--Cyan);
+}
+.div3{
+    background-color: hsl(179, 43%, 52%);
+}
+.div2>p{
+    color:var(--LightGray);
+}
+.div2>h5{
+    color: white;
+}
+.div3>h5{
+    color: white;
+}
+.p1{
+    color: var(--BrightYellow);
+    font-weight: 700;
+}
+.p2{
+    color: var(--GrayishBlue);
+}
+h5{
+    font-weight: 700;
+    margin:  .8rem 0 1.5rem 0 ;
+}
+.div1>h5{
+    color: var(--Cyan);
+}.mybtn{
+    width: 100%;
+    background-color: var(--BrightYellow);
+    color: white;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    margin: 15px 0;
+}
+.p3{
+    color: var(--LightGray);
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .row{
+        max-width:90%;
+        margin:  5rem auto;
+    }
+}
